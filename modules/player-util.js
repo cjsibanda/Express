@@ -27,7 +27,7 @@ var players = [
 ];
 
 module.exports.getAllPlayers = function () {
-    return employees;
+    return players;
 }
 
 module.exports.getVisiblePlayers = function (emp) {
