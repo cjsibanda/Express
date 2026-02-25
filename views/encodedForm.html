@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoded Form</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<body>
+    <form method="post" action="/addEntry">
+  Full Name<br />
+  <input type="text" name="fullName" /><br /><br />
+
+  Blog Entry<br />
+  <textarea name="blogEntry"></textarea><br /><br />
+
+  Animal<br />
+  <select name="animal">
+    <option value="">-- Please choose an option --</option>
+    <option value="lion">Lion</option>
+    <option value="zebra">Zebra</option>
+    <option value="springbok">Springbok</option>
+    <option value="cheetah">Cheetah</option></select
+  ><br /><br />
+
+  Teams<br />
+  <select multiple name="teams">
+    <option value="proteas">Proteas</option>
+    <option value="sprinboks">Springboks</option>
+    <option value="bulls">Blue Bulls</option>
+    <option value="sharks">Cell C Sharks</option></select
+  ><br /><br />
+
+  City<br />
+  <label><input type="radio" name="city" value="durban" /> Durban </label><br />
+  <label><input type="radio" name="city" value="pretoria" /> Pretoria </label><br />
+  <label><input type="radio" name="city" value="ndabaziduna" /> Ndabazinduna </label><br /><br />
+
+  <label><input type="checkbox" name="active" /> Active </label><br /><br />
+
+  <input type="hidden" name="productID" value="193774" />
+
+  <button type="submit">Submit</button>
+</form>
+</body>
+
+</html>
