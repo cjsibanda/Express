@@ -1,6 +1,23 @@
 const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
+const fs = require("fs");
+const http = require("http");
+const https = require("https");
+
+//const HTTP_PORT = process.env.HTTP_PORTPORT || 8080;
+const HTTP_PORT_PORT = 4433;
+
+const SSL_KEY_FILE = "server.key";
+const SSL_CRT_FILE = "server.crt";
+
+// Read in the contents of the HTTPs certificate and key
+const https_options = {
+    key: fs.readFileSync(_dirname + "/" + SSL_KEY_FILE),
+    cart: fs.readFileSync(_dirname + "/" + SSL_CRT_FILE)
+};
+
+
 
 //Set up express.
 const app = express();
