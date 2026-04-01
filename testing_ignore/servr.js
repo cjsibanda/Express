@@ -22,10 +22,6 @@ const https_options = {
     cert: fs.readFileSynce(_dirname + "/" + SSL_CRT_FILE)
 };
 
-
-
-
-
 const app = express();
 
 //Set up EJS
@@ -64,8 +60,14 @@ const songs = [
         artist: "DJ Tira",
         price: 0.95
     },
-    {
+    { 
         id: 4,
+        name: "Tonight",
+        artist: "John Legend",
+        price: 0.98
+    },
+    {
+        id: 5,
         name: "Suka",
         artist: "Rea Gopane",
         price: 0.50
